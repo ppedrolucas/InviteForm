@@ -1,0 +1,28 @@
+.layout {
+  height: 100vh;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 32rem 1fr;
+  gap: 1.25rem;
+  overflow: hidden;
+  .banner {
+    border-radius: 0.75rem;
+    padding: 2rem;
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    .title img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+    }
+  }
+  .main {
+    background-color: var(--shape-body);
+    padding-block: 5rem;
+    border-radius: 0.75rem;
+    overflow: auto;
+  }
+}

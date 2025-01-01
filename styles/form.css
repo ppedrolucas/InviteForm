@@ -1,0 +1,96 @@
+#form {
+  form {
+    fieldset {
+      legend {
+        display: flex;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font: var(--body-sm);
+          color: var(--text-body);
+        }
+
+        .colors {
+          margin-top: 0.75rem;
+          .input-color {
+            background-color: var(--shape-button);
+            border-radius: 50%;
+            height: 2.5rem;
+            width: 2.5rem;
+            display: grid;
+            place-items: center;
+            &:hover,
+            &:focus {
+              border: 1px solid var(--brand-light);
+            }
+            & #picker {
+              border-radius: 50%;
+              height: 1.75rem;
+              width: 1.75rem;
+            }
+          }
+        }
+      }
+
+      .double-input-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        .input-wrapper {
+          flex-grow: 1;
+
+          input[type="date"] {
+            position: relative;
+            &::-webkit-calendar-picker-indicator {
+              opacity: 0;
+            }
+          }
+        }
+
+        .radio-wrapper {
+          height: 48px;
+          margin-top: 0.75rem;
+          border-radius: 0.5rem;
+          display: flex;
+          align-items: stretch;
+          gap: 0.25rem;
+          padding: 0.25rem;
+          background-color: var(--input-base);
+          .radio-inner {
+            width: 100%;
+            border-radius: 0.3125rem;
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.75rem 1.125rem;
+            align-items: center;
+            position: relative;
+            font: var(--body-sm);
+
+            &:has(:checked) {
+              background-color: var(--shape-button);
+              & svg path {
+                stroke: var(--brand-light);
+              }
+            }
+
+            input {
+              all: unset;
+              position: absolute;
+              inset: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

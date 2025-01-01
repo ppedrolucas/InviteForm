@@ -1,0 +1,66 @@
+/* Inputs e Textarea */
+input,
+textarea {
+  outline: none;
+  border: none;
+  margin-top: 0.75rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--text-heading);
+
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border: 1px solid var(--brand-light);
+}
+
+textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+
+/* Buttons */
+.btn-primary {
+  border: none;
+  display: flex;
+  gap: 0.75px;
+  padding: 0.8125rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--brand-dark);
+  color: var(--text-heading);
+  font: var(--body-md);
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--brand-md);
+  }
+}
+
+.btn-secondary {
+  padding: 0.65625rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  gap: 0.5rem;
+  font: var(--body-sm);
+  background-color: var(--shape-button);
+  color: var(--text-heading);
+}
+
+input[type="file"] {
+  background-color: red;
+}
