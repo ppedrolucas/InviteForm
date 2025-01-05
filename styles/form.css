@@ -17,6 +17,7 @@
         }
 
         .colors {
+          flex-wrap: wrap;
           margin-top: 0.75rem;
           .input-color {
             background-color: var(--shape-button);
@@ -88,6 +89,27 @@
               height: 100%;
               opacity: 0;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 60em) {
+  #form {
+    form {
+      fieldset {
+        & .double-input-wrapper {
+          grid-template-columns: 1fr;
+        }
+        & .input-wrapper {
+          .colors {
+            all: unset;
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
           }
         }
       }

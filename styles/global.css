@@ -66,6 +66,10 @@ fieldset {
 .container {
   max-width: 40rem;
   margin-inline: auto;
+
+  @media (width <= 60em) {
+    margin-inline: 0;
+  }
 }
 
 /* Classes Utilitárias */

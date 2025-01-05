@@ -2,7 +2,7 @@
   height: 100vh;
   padding: 1.25rem;
   display: grid;
-  grid-template-columns: 32rem 1fr;
+  grid-template-columns: 1fr 2.5fr;
   gap: 1.25rem;
   overflow: hidden;
   .banner {
@@ -24,5 +24,18 @@
     padding-block: 5rem;
     border-radius: 0.75rem;
     overflow: auto;
+  }
+}
+
+@media (width <= 60em) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+
+    .banner,
+    .main {
+      padding: 1rem;
+    }
   }
 }
