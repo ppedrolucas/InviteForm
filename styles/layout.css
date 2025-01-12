@@ -37,5 +37,8 @@
     .main {
       padding: 1rem;
     }
+    .main {
+      padding-block: 5rem;
+    }
   }
 }

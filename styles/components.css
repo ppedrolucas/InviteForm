@@ -44,9 +44,14 @@ textarea {
   color: var(--text-heading);
   font: var(--body-md);
   font-weight: 600;
-
+  margin-left: auto;
   &:hover {
     background-color: var(--brand-md);
+  }
+  & img {
+    width: 1.25rem;
+    height: auto;
+    margin-right: 0.75rem;
   }
 }
 

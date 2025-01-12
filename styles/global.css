@@ -71,7 +71,9 @@ fieldset {
     margin-inline: 0;
   }
 }
-
+a {
+  color: var(--brand-light);
+}
 /* Classes Utilitárias */
 .logo {
   font: var(--logo);
