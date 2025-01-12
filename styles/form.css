@@ -102,6 +102,12 @@
       fieldset {
         & .double-input-wrapper {
           grid-template-columns: 1fr;
+          .input-wrapper {
+            width: 100%;
+            input {
+              width: 100%;
+            }
+          }
         }
         & .input-wrapper {
           .colors {
